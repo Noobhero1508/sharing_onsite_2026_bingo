@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="840" viewBox="0 0 760 840" fill="none">
+  <!-- Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4
+       Original cabinet artwork. Orthogonal 440 × 440 window at 138,155.
+       The cabinet is a physical illustration; the reel and controls are live HTML. -->
+  <style>
+    :root{--black:#080d0d;--shadow:#070c0c;--enamel-lit:#45524c;--enamel:#2d3b35;--enamel-dark:#182721;--side:#11211b;--side-lit:#2b3930;--edge:#718077;--seam:#101a16;--wear:#a8aca0;--ivory-light:#f0e8d2;--ivory:#d6ceb7;--ivory-dark:#9a957f;--ivory-shadow:#74725f;--steel-light:#e6e3d6;--steel:#a4aa9e;--steel-mid:#657368;--steel-dark:#39443a;--steel-black:#1b261e;--socket:#101713;--hole:#08110c;--ink:#899483;--deck-top:#53604e;--deck:#384736;--rubber:#101712;--rubber-lit:#333b30;--warm-reflection:#b4a381}
+  </style>
+  <defs>
+    <linearGradient id="front" x1="72" y1="80" x2="635" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--enamel-lit)"/><stop offset=".30" stop-color="var(--enamel)"/><stop offset=".84" stop-color="var(--enamel-dark)"/><stop offset="1" stop-color="var(--side)"/>
+    </linearGradient>
+    <linearGradient id="rightFace" x1="637" y1="379" x2="693" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--side)"/><stop offset=".58" stop-color="var(--side-lit)"/><stop offset=".84" stop-color="var(--enamel-dark)"/><stop offset="1" stop-color="var(--seam)"/>
+    </linearGradient>
+    <linearGradient id="topFace" x1="375" y1="27" x2="375" y2="67" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--enamel)"/><stop offset=".95" stop-color="var(--enamel-lit)"/><stop offset="1" stop-color="var(--edge)"/>
+    </linearGradient>
+    <linearGradient id="ivoryFace" x1="133" y1="126" x2="615" y2="624" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--ivory-light)"/><stop offset=".58" stop-color="var(--ivory)"/><stop offset="1" stop-color="var(--ivory-dark)"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="var(--steel-light)"/><stop offset=".17" stop-color="var(--steel)"/><stop offset=".39" stop-color="var(--steel-mid)"/><stop offset=".51" stop-color="var(--steel-light)"/><stop offset=".66" stop-color="var(--steel)"/><stop offset="1" stop-color="var(--steel-dark)"/>
+    </linearGradient>
+    <linearGradient id="darkSteel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="var(--steel)"/><stop offset=".32" stop-color="var(--steel-dark)"/><stop offset=".51" stop-color="var(--steel-mid)"/><stop offset="1" stop-color="var(--steel-black)"/>
+    </linearGradient>
+    <linearGradient id="upperBevel" x1="358" y1="135" x2="358" y2="156" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--ivory-shadow)"/><stop offset=".25" stop-color="var(--steel-dark)"/><stop offset="1" stop-color="var(--black)"/>
+    </linearGradient>
+    <linearGradient id="leftBevel" x1="120" y1="377" x2="138" y2="377" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--steel-mid)"/><stop offset=".38" stop-color="var(--steel-dark)"/><stop offset="1" stop-color="var(--black)"/>
+    </linearGradient>
+    <linearGradient id="lowerBevel" x1="358" y1="592" x2="358" y2="616" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--black)"/><stop offset=".33" stop-color="var(--steel-dark)"/><stop offset=".55" stop-color="var(--steel-mid)"/><stop offset=".88" stop-color="var(--ivory-light)"/><stop offset="1" stop-color="var(--ivory-dark)"/>
+    </linearGradient>
+    <linearGradient id="deckTop" x1="168" y1="640" x2="521" y2="755" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--deck-top)"/><stop offset=".44" stop-color="var(--deck)"/><stop offset="1" stop-color="var(--enamel-dark)"/>
+    </linearGradient>
+    <linearGradient id="deckFront" x1="399" y1="730" x2="402" y2="776" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--enamel-lit)"/><stop offset=".09" stop-color="var(--enamel)"/><stop offset=".45" stop-color="var(--enamel-dark)"/><stop offset="1" stop-color="var(--side)"/>
+    </linearGradient>
+    <linearGradient id="lowerTrim" x1="399" y1="779" x2="399" y2="814" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--steel-dark)"/><stop offset=".20" stop-color="var(--steel)"/><stop offset=".26" stop-color="var(--steel-light)"/><stop offset=".40" stop-color="var(--steel-mid)"/><stop offset=".80" stop-color="var(--steel-dark)"/><stop offset="1" stop-color="var(--steel-black)"/>
+    </linearGradient>
+    <radialGradient id="fastener" cx=".3" cy=".23" r=".82">
+      <stop stop-color="var(--steel-light)"/><stop offset=".49" stop-color="var(--steel)"/><stop offset=".8" stop-color="var(--steel-dark)"/><stop offset="1" stop-color="var(--steel-black)"/>
+    </radialGradient>
+    <radialGradient id="contact" cx=".5" cy=".5" r=".5">
+      <stop stop-color="var(--shadow)" stop-opacity=".85"/><stop offset=".64" stop-color="var(--shadow)" stop-opacity=".5"/><stop offset="1" stop-color="var(--shadow)" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="brushed" width="24" height="7" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H24M3 4H19" stroke="var(--steel-light)" stroke-opacity=".1" stroke-width=".55"/>
+      <path d="M0 2H13M15 6H24" stroke="var(--steel-black)" stroke-opacity=".12" stroke-width=".5"/>
+    </pattern>
+    <g id="screw">
+      <circle cy="1" r="6.1" fill="var(--seam)"/><circle r="5.2" fill="url(#fastener)"/>
+      <path d="M-3.6 1.65 3.6-1.65" stroke="var(--steel-black)" stroke-width="1.6"/>
+      <path d="M-3.5 2.15 3.7-1.15" stroke="var(--steel-light)" stroke-opacity=".6" stroke-width=".5"/>
+    </g>
+    <g id="smallScrew">
+      <circle cy=".5" r="3.5" fill="var(--seam)"/><circle r="2.7" fill="url(#fastener)"/>
+      <path d="M-1.7 .8 1.7-.8" stroke="var(--steel-black)" stroke-width=".8"/>
+    </g>
+    <g id="vent">
+      <path d="M0 0H48L43 4H0Z" fill="var(--hole)"/>
+      <path d="M0 4H43" stroke="var(--edge)" stroke-opacity=".55" stroke-width=".7"/>
+    </g>
+    <g id="sideVent">
+      <path d="m0 0 21-12v5L0 5Z" fill="var(--hole)"/>
+      <path d="m0 5 21-12" stroke="var(--edge)" stroke-opacity=".6" stroke-width=".65"/>
+    </g>
+  </defs>
+
+  <!-- Cast shadow, isolated rubber feet, and the low metal plinth. -->
+  <ellipse cx="390" cy="811" rx="348" ry="27" fill="url(#contact)"/>
+  <path d="M100 783H183V818H111L100 811Z" fill="var(--rubber)"/>
+  <path d="M106 789H180V799H106Z" fill="var(--rubber-lit)"/>
+  <path d="M567 783H650V812L634 820H567Z" fill="var(--rubber)"/>
+  <path d="M571 788H645V798H571Z" fill="var(--rubber-lit)"/>
+  <path d="m58 753 566-12 62 39-46 24H97L58 785Z" fill="url(#darkSteel)"/>
+  <path d="M58 767H637L685 783V803L637 818H106L58 792Z" fill="url(#lowerTrim)" stroke="var(--seam)" stroke-width="2"/>
+  <path d="m637 784 47-1v19l-47 15Z" fill="var(--steel-black)"/>
+  <path d="M60 774H632L676 785" stroke="var(--steel-light)" stroke-opacity=".65" stroke-width="1.5"/>
+  <path d="M106 803H628" stroke="var(--black)" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M107 805H628" stroke="var(--steel)" stroke-opacity=".4"/>
+
+  <!-- Rear shell is visible over the top and along the right. -->
+  <path d="M62 61 108 26H666L687 44V699L638 768H79L58 746V78Z" fill="var(--seam)" stroke="var(--black)" stroke-width="2"/>
+  <path d="M62 61 108 26H666L687 44 633 77Z" fill="url(#topFace)"/>
+  <path d="m635 65 52-29v661l-52 71Z" fill="url(#rightFace)"/>
+  <path d="m637 77 48-28" stroke="var(--edge)" stroke-width="1"/>
+  <path d="m673 65 1 630-23 36" stroke="var(--black)" stroke-opacity=".65" stroke-width="2"/>
+  <path d="m675 64 1 631-23 36" stroke="var(--edge)" stroke-opacity=".28"/>
+  <path d="m657 165 12-7v300l-12 11Z" fill="var(--enamel-dark)" stroke="var(--seam)"/>
+  <path d="m658 166 10-6" stroke="var(--edge)" stroke-opacity=".35"/>
+  <use href="#sideVent" x="646" y="499"/><use href="#sideVent" x="646" y="510"/>
+  <use href="#sideVent" x="646" y="521"/><use href="#sideVent" x="646" y="532"/>
+  <use href="#sideVent" x="646" y="543"/><use href="#sideVent" x="646" y="554"/>
+  <use href="#sideVent" x="646" y="565"/><use href="#sideVent" x="646" y="576"/>
+  <path d="M665 47H129L93 72" stroke="var(--wear)" stroke-opacity=".33" stroke-width="1.1"/>
+  <path d="M156 29H212M624 29H652" stroke="var(--wear)" stroke-opacity=".4"/>
+
+  <!-- Thick front enclosure: chamfered corners, folded seams and edge light. -->
+  <path d="M77 59H615L637 81V742L616 769H80L58 747V81Z" fill="url(#front)" stroke="var(--seam)" stroke-width="3"/>
+  <path d="M78 61H614L634 82V742L615 765H81L61 745V82Z" stroke="var(--edge)" stroke-opacity=".66" stroke-width="1"/>
+  <path d="M72 89 82 75H608L622 89V735L608 750H86L72 735Z" stroke="var(--seam)" stroke-width="1.5"/>
+  <path d="M74 93V733L87 747" stroke="var(--wear)" stroke-opacity=".22"/>
+  <path d="M620 96V732" stroke="var(--black)" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M62 87V103M62 215V234M77 61H113M561 61H581" stroke="var(--wear)" stroke-width="1.8" stroke-opacity=".7"/>
+  <path d="M60 371V378M62 649V658M81 75H91" stroke="var(--ivory-light)" stroke-opacity=".4"/>
+
+  <!-- A pressed, recessed vent cover sits above the window. -->
+  <path d="M193 82H527L535 90V109H185V90Z" fill="var(--seam)"/>
+  <path d="M195 83H525L531 90V106H189V90Z" fill="var(--enamel-dark)" stroke="var(--edge)" stroke-opacity=".5"/>
+  <use href="#vent" x="202" y="90"/><use href="#vent" x="268" y="90"/><use href="#vent" x="334" y="90"/><use href="#vent" x="400" y="90"/><use href="#vent" x="466" y="90"/>
+  <use href="#vent" x="202" y="99"/><use href="#vent" x="268" y="99"/><use href="#vent" x="334" y="99"/><use href="#vent" x="400" y="99"/><use href="#vent" x="466" y="99"/>
+
+  <!-- The front plate casts a tight contact shadow on the enamel. -->
+  <path d="M123 121H596L616 143V614L594 635H125L102 613V145Z" fill="var(--black)" fill-opacity=".75"/>
+  <path d="M122 116H594L615 137V610L594 631H122L101 610V137Z" fill="url(#darkSteel)" stroke="var(--seam)" stroke-width="2"/>
+  <path d="M124 121H592L610 140V608L592 627H124L106 608V140Z" fill="url(#ivoryFace)" stroke="var(--ivory-light)" stroke-width=".8"/>
+  <path d="M126 125H590L606 142V605L590 622H126L111 606V143Z" stroke="var(--ivory-shadow)" stroke-opacity=".48" stroke-width="1"/>
+  <path d="M126 126H589L604 142" stroke="var(--ivory-light)" stroke-width="1.5"/>
+  <path d="M110 144V603" stroke="var(--ivory-light)" stroke-width="1.4" stroke-opacity=".65"/>
+  <path d="M592 622 606 606V147" stroke="var(--ivory-shadow)" stroke-opacity=".65" stroke-width="1.5"/>
+
+  <!-- Four physical planes reveal a window set deep into the body. -->
+  <rect x="120" y="137" width="476" height="477" fill="var(--black)"/>
+  <path d="M120 137H596L578 155H138Z" fill="url(#upperBevel)"/>
+  <path d="M120 137 138 155V595L120 614Z" fill="url(#leftBevel)"/>
+  <path d="M596 137V614L578 595V155Z" fill="url(#darkSteel)"/>
+  <path d="M120 614 138 595H578L596 614Z" fill="url(#lowerBevel)"/>
+  <path d="M122 139H594V611H123" stroke="var(--steel)" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M133 150H583V601H132V150Z" stroke="var(--steel-black)" stroke-width="3"/>
+  <rect x="138" y="155" width="440" height="440" fill="var(--black)"/>
+  <path d="M137 155V595H578" stroke="var(--black)" stroke-width="2"/>
+  <path d="M138 597H578" stroke="var(--steel-light)" stroke-opacity=".5"/>
+  <path d="M597 141V610" stroke="var(--ivory-light)" stroke-width="1"/>
+
+  <!-- Front fasteners are functional: each locates a plate or a case seam. -->
+  <use href="#screw" x="89" y="97"/><use href="#screw" x="603" y="97"/>
+  <use href="#screw" x="88" y="620"/><use href="#screw" x="621" y="617"/>
+  <use href="#smallScrew" x="115" y="134"/><use href="#smallScrew" x="601" y="134"/>
+  <use href="#smallScrew" x="116" y="614"/><use href="#smallScrew" x="601" y="614"/>
+
+  <!-- Two bearing mounts connect external mechanisms to the steel enclosure. -->
+  <path d="M59 393H82V438H59Z" fill="var(--steel-black)" stroke="var(--seam)"/>
+  <path d="M46 400H77V430H46Z" fill="url(#darkSteel)" stroke="var(--black)"/>
+  <circle cx="58" cy="415" r="11" fill="var(--steel-black)" stroke="var(--steel-mid)" stroke-width="2"/>
+  <circle cx="58" cy="415" r="5" fill="var(--black)"/>
+  <path d="M59 526H82V569H59Z" fill="var(--steel-black)" stroke="var(--seam)"/>
+  <path d="M48 533H77V562H48Z" fill="url(#darkSteel)" stroke="var(--black)"/>
+  <circle cx="61" cy="547" r="10" fill="var(--steel-black)" stroke="var(--steel-mid)" stroke-width="2"/>
+  <circle cx="61" cy="547" r="4.5" fill="var(--black)"/>
+
+  <!-- The deck projects down-left; its depth axis agrees with the case's
+       upper-right recession. The front fascia stays parallel to the window. -->
+  <path d="M84 637H621V677L584 781H51V738Z" fill="var(--black)" fill-opacity=".75"/>
+  <path d="M612 633V671L576 769V731Z" fill="var(--side)" stroke="var(--seam)" stroke-width="2"/>
+  <path d="M85 633H612L576 731H49Z" fill="url(#deckTop)" stroke="var(--seam)" stroke-width="2"/>
+  <path d="M49 731H576V769H49Z" fill="url(#deckFront)" stroke="var(--seam)" stroke-width="2"/>
+  <path d="M88 636H608L574 728H53Z" stroke="var(--edge)" stroke-width="1.2"/>
+  <path d="M51 733H574" stroke="var(--steel)" stroke-opacity=".75" stroke-width="1.3"/>
+  <path d="M54 738H571M54 763H571" stroke="var(--black)" stroke-opacity=".5" stroke-width="1"/>
+  <path d="M53 766H573" stroke="var(--edge)" stroke-opacity=".28"/>
+  <path d="M90 641 59 724" stroke="var(--steel)" stroke-opacity=".5"/>
+  <path d="M100 642H598L569 722H71Z" stroke="var(--seam)" stroke-opacity=".65"/>
+  <path d="M579 732 609 650V669L579 755" stroke="var(--edge)" stroke-opacity=".22"/>
+
+  <!-- One projection for insert, bolts and socket: deck centroid (330.5,682),
+       depth direction (-36,+98). The live button uses this same matrix. -->
+  <g id="control-insert" transform="matrix(1 0 -0.2497959184 0.68 330.5 682)">
+    <rect x="-120" y="-50" width="240" height="104" fill="var(--seam)"/>
+    <rect x="-118" y="-51" width="236" height="102" fill="url(#darkSteel)" stroke="var(--steel-mid)" stroke-width="1.3"/>
+    <rect x="-116" y="-49" width="232" height="98" fill="url(#brushed)"/>
+    <path d="M-118-50H118" stroke="var(--steel-light)" stroke-opacity=".7"/>
+    <ellipse cx="1" cy="7" rx="51" ry="48" fill="var(--black)" fill-opacity=".6"/>
+    <circle cx="0" cy="3" r="47" fill="var(--steel-black)" stroke="var(--black)" stroke-width="1.5"/>
+    <circle id="button-socket" r="47" fill="url(#steel)" stroke="var(--steel-dark)" stroke-width="1.5"/>
+    <circle r="43" fill="url(#darkSteel)" stroke="var(--steel-light)" stroke-opacity=".65"/>
+    <circle r="40" fill="var(--socket)"/>
+    <use href="#smallScrew" x="-105" y="-37"/><use href="#smallScrew" x="105" y="-37"/>
+    <use href="#smallScrew" x="-105" y="37"/><use href="#smallScrew" x="105" y="37"/>
+  </g>
+  <use href="#screw" x="73" y="751"/><use href="#screw" x="551" y="751"/>
+
+  <!-- Restrained wear only on the handling edge, never over the paint field. -->
+  <path d="M83 730H97M112 730H116M480 730H490M536 730H558" stroke="var(--wear)" stroke-width="1.1" stroke-opacity=".7"/>
+  <path d="M575 727 579 717M252 718H261" stroke="var(--wear)" stroke-opacity=".45"/>
+</svg>

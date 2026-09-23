@@ -1,0 +1,21 @@
+/* Hallmark · custom industrial retro · stage workbench · anchor: warm ivory / enamel red */
+@font-face{font-family:Be Vietnam Pro;src:url('assets/fonts/BeVietnamPro-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Be Vietnam Pro;src:url('assets/fonts/BeVietnamPro-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Barlow Condensed;src:url('assets/fonts/BarlowCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+:root {
+  --control-center-x:330.5px;--control-center-y:682px;--control-shear:-0.2497959184;--control-depth:0.68;
+  --color-bg:oklch(17% .026 229);--color-stage:oklch(23% .032 224);--color-panel:oklch(24% .025 217);
+  --color-ivory:oklch(91% .029 88);--color-paper:oklch(94% .026 89);--color-paper-shadow:oklch(80% .039 80);
+  --color-text:oklch(92% .024 86);--color-muted:oklch(73% .025 196);--color-quiet:oklch(60% .026 207);
+  --color-ink:oklch(28% .03 210);--color-ink-muted:oklch(47% .025 210);--color-accent:oklch(78% .106 77);
+  --color-red:oklch(48% .149 29);--color-red-light:oklch(64% .181 32);--color-red-bright:oklch(73% .143 37);--color-red-dark:oklch(26% .081 23);
+  --color-rule:oklch(71% .039 192 / .24);--color-fine:oklch(85% .03 90 / .13);--color-focus:oklch(87% .148 92);
+  --color-shadow:oklch(6% .009 208 / .65);--color-shadow-deep:oklch(3% .009 208 / .85);--color-black:oklch(4% .005 208);
+  --color-clear:oklch(100% .005 80 / 0);--color-glass:oklch(95% .02 86 / .08);--color-white:oklch(98% .01 80);--color-machine-plaque:oklch(35% .026 159);
+  --color-indicator:oklch(79% .14 91);--color-success:oklch(77% .112 147);--color-overlay:oklch(11% .027 219 / .95);
+  --font-display:'Barlow Condensed','Arial Narrow',sans-serif;--font-body:'Be Vietnam Pro','Segoe UI',sans-serif;
+  --space-xs:4px;--space-sm:8px;--space-md:16px;--space-lg:24px;--space-xl:32px;--space-2xl:48px;--space-3xl:64px;
+  --text-xs:12px;--text-sm:14px;--text-body:18px;--text-lg:22px;--text-title:40px;--text-display:112px;
+  --ease-out:cubic-bezier(.16,1,.3,1);--ease-in:cubic-bezier(.7,0,.84,0);--ease-in-out:cubic-bezier(.65,0,.35,1);
+  --dur-short:160ms;--dur-medium:280ms;--dur-long:440ms;--radius-control:4px;--rule-width:1px;--reel-size:440px;
+}

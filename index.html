@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10242b">
+  <title>Bingo · Sharing Onsite 2026</title>
+  <link rel="icon" href="assets/images/logo-fev.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2.6 7M3 4v7h7M12 7v5l3 2"/></symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="icon-zoom" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6m-3-3v6"/></symbol>
+    <symbol id="icon-sound" viewBox="0 0 24 24"><path d="M11 4 6 8H3v8h3l5 4zM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="icon-muted" viewBox="0 0 24 24"><path d="M11 4 6 8H3v8h3l5 4zM16 9l6 6m0-6-6 6"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  </defs></svg>
+
+  <div class="stage-viewport" id="stage-viewport">
+    <main class="scene" id="scene" aria-label="Bingo Sharing Onsite 2026">
+      <div class="event-background" aria-hidden="true"></div>
+      <div id="background-mechanics" aria-hidden="true"></div>
+      <div class="stage-floor" aria-hidden="true"></div>
+      <div id="mechanical-sparks" aria-hidden="true"></div>
+      <header class="event-header">
+        <img class="brand-logo" src="assets/images/logo-fev.png" width="815" height="459" alt="FEV — FPT Event Club">
+        <div class="event-identity">
+          <h1 class="sr-only">Sharing Onsite 2026 — Bingo</h1>
+          <img src="assets/images/sharing-onsite.png" width="2225" height="544" alt="Sharing Onsite" class="event-wordmark">
+          <span class="event-year">2026</span>
+        </div>
+        <div class="utility-controls" role="group" aria-label="Điều khiển trình chiếu">
+          <button class="tool-button" id="btn-sound" aria-label="Tắt âm thanh" aria-pressed="false" title="Bật / tắt âm thanh · M">
+            <svg class="icon sound-on"><use href="#icon-sound"/></svg><svg class="icon sound-off"><use href="#icon-muted"/></svg>
+          </button>
+          <button class="tool-button" id="btn-fullscreen" aria-label="Toàn màn hình" title="Toàn màn hình"><svg class="icon"><use href="#icon-expand"/></svg></button>
+        </div>
+      </header>
+
+      <aside class="history-dock" id="history-dock" aria-label="Kết quả lượt trước">
+        <div class="side-heading"><span>Lượt trước</span><span class="heading-rule"></span></div>
+        <div id="dock-content" class="dock-content"><div class="dock-empty"><span class="empty-frame" aria-hidden="true"></span><p>Thẻ đã bốc<br>sẽ xuất hiện ở đây.</p></div></div>
+        <button class="text-button" id="btn-open-history"><svg class="icon"><use href="#icon-history"/></svg><span>Xem lịch sử</span><kbd>H</kbd></button>
+      </aside>
+
+      <section class="machine" id="machine" aria-label="Bốc thăm Bingo">
+        <div id="machine-motion">
+        <div id="machine-gears" aria-hidden="true"></div>
+        <img class="cabinet-art" src="assets/images/cabinet.svg" width="760" height="840" alt="" aria-hidden="true">
+        <div class="machine-plaque"><span class="plaque-word">BINGO</span><span class="machine-status"><span id="status-light" class="status-light"></span><span id="status-text">Đang chuẩn bị</span></span></div>
+
+        <div class="reel-window" id="reel-window" role="button" tabindex="0" aria-label="Phóng to kết quả hiện tại" aria-disabled="true">
+          <div class="reel-strip" id="reel-strip">
+            <div class="reel-card idle-card" id="idle-card">
+              <div class="idle-corner corner-tl"></div><div class="idle-corner corner-tr"></div><div class="idle-corner corner-bl"></div><div class="idle-corner corner-br"></div>
+              <span class="idle-overline">SHARING ONSITE 2026</span>
+              <span class="idle-title">BINGO</span>
+              <span class="idle-rule"></span>
+              <span class="idle-message">Chạm nút đỏ để bắt đầu</span>
+              <span class="idle-submessage">hoặc kéo cần gạt bên cạnh</span>
+            </div>
+          </div>
+          <div class="reel-glass" aria-hidden="true"></div>
+          <span class="reel-edge edge-top" aria-hidden="true"></span><span class="reel-edge edge-bottom" aria-hidden="true"></span>
+        </div>
+        <div class="result-meta" id="result-meta"><span id="current-number">—</span><span id="current-name">Sẵn sàng cho lượt đầu tiên</span></div>
+
+        <button class="spin-button" id="btn-spin" aria-label="Quay Bingo" title="Quay Bingo · Space / Enter" disabled><span class="spin-button-cap"></span></button>
+        <div class="control-etch" aria-hidden="true"><span class="etch-line"></span><span>SPACE / ENTER</span><span class="etch-line"></span></div>
+
+        <div class="lever-assembly">
+          <svg id="lever-svg" viewBox="0 0 160 420" width="160" height="420" aria-hidden="true">
+            <defs>
+              <linearGradient id="lever-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#394345"/><stop offset=".26" stop-color="#b8beb7"/><stop offset=".42" stop-color="#eff0d9"/><stop offset=".58" stop-color="#8b9591"/><stop offset="1" stop-color="#243134"/></linearGradient>
+              <linearGradient id="rod-steel" gradientUnits="userSpaceOnUse" x1="62" y1="0" x2="82" y2="0"><stop stop-color="#394345"/><stop offset=".26" stop-color="#b8beb7"/><stop offset=".42" stop-color="#eff0d9"/><stop offset=".58" stop-color="#8b9591"/><stop offset="1" stop-color="#243134"/></linearGradient>
+              <linearGradient id="lever-base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#75807a"/><stop offset=".45" stop-color="#344643"/><stop offset="1" stop-color="#142223"/></linearGradient>
+              <radialGradient id="knob-red" cx=".32" cy=".24" r=".82"><stop stop-color="#f17659"/><stop offset=".25" stop-color="#c44834"/><stop offset=".66" stop-color="#8c261e"/><stop offset="1" stop-color="#410f0f"/></radialGradient>
+              <filter id="lever-shadow" x="-100%" y="-100%" width="300%" height="300%"><feDropShadow dx="4" dy="7" stdDeviation="4" flood-color="#000" flood-opacity=".45"/></filter>
+            </defs>
+            <path d="M0 280 46 277 80 297 80 337 45 355 0 347Z" fill="url(#lever-base)" stroke="#152024" stroke-width="3"/>
+            <ellipse cx="68" cy="317" rx="33" ry="40" fill="#121f22" stroke="#68766b" stroke-width="3"/>
+            <ellipse cx="72" cy="312" rx="24" ry="31" fill="url(#lever-steel)" stroke="#050e10" stroke-width="3"/>
+            <g filter="url(#lever-shadow)"><line id="lever-rod" x1="72" y1="312" x2="72" y2="62" stroke="url(#rod-steel)" stroke-width="19" stroke-linecap="round"/><line id="lever-rod-highlight" x1="68" y1="304" x2="68" y2="62" stroke="#dce0c9" stroke-width="2" opacity=".75"/>
+              <g id="lever-knob" transform="translate(72 62)"><path d="M-11 26v18h22V26" fill="url(#lever-steel)"/><circle r="36" fill="url(#knob-red)" stroke="#451910" stroke-width="2"/><ellipse cx="-11" cy="-15" rx="15" ry="8" fill="#fff3da" opacity=".21" transform="rotate(-28)"/><path d="M-28-10A30 30 0 0 1 8-29" fill="none" stroke="#f79474" stroke-width="1.5" opacity=".65"/></g>
+            </g>
+            <ellipse cx="72" cy="313" rx="8" ry="11" fill="#59665f" stroke="#afbaab" stroke-width="1.5"/>
+          </svg>
+          <button id="lever-hit" class="lever-hit" aria-label="Kéo hoặc bấm cần gạt để quay Bingo" title="Kéo xuống để quay" disabled></button>
+        </div>
+        </div>
+      </section>
+
+      <aside class="session-panel" aria-label="Tiến độ bốc thăm">
+        <span class="side-heading">Thẻ còn lại</span>
+        <div class="remaining-counter"><span id="remaining-value">25</span><span class="counter-total">/ 25</span></div>
+        <div class="drawn-counter"><span>Đã bốc</span><span><strong id="drawn-value">0</strong> / 25</span></div>
+        <button id="btn-zoom-card" class="zoom-button" disabled><svg class="icon"><use href="#icon-zoom"/></svg><span>Phóng to thẻ</span><kbd>Z</kbd></button>
+        <p class="result-help">Chọn thẻ để cả hội trường<br>cùng xem kết quả.</p>
+      </aside>
+
+      <footer class="stage-footer"><span>FEV · FPT EVENT CLUB</span><div class="keyboard-guide"><span><kbd>SPACE</kbd> Quay</span><span><kbd>Z</kbd> Phóng to</span><span><kbd>H</kbd> Lịch sử</span></div><span>SHARING ONSITE 2026</span></footer>
+      <div id="load-error" class="load-error" role="alert" hidden></div>
+    </main>
+  </div>
+
+  <dialog id="history-dialog" class="history-dialog" aria-labelledby="history-title">
+    <header class="dialog-header"><div><p class="dialog-eyebrow">BINGO · SHARING ONSITE 2026</p><h2 id="history-title">Những lượt đã qua</h2><p id="history-stats">Đã bốc 0 / 25 thẻ</p></div><button class="dialog-close" id="btn-close-history" aria-label="Đóng lịch sử"><svg class="icon"><use href="#icon-close"/></svg></button></header>
+    <div id="history-grid" class="history-grid"></div>
+    <footer class="dialog-footer">Chọn một thẻ đã bốc để phóng to.<span><kbd>ESC</kbd> Đóng</span></footer>
+  </dialog>
+  <dialog id="zoom-dialog" class="zoom-dialog" aria-labelledby="zoom-card-title">
+    <button id="btn-close-zoom" class="dialog-close" aria-label="Đóng phóng to"><svg class="icon"><use href="#icon-close"/></svg></button>
+    <div class="zoom-content"><div class="zoom-image-frame"><img id="zoom-card-img" alt=""><span class="zoom-impact" aria-hidden="true"></span></div><div class="zoom-caption"><span id="zoom-card-badge"></span><h2 id="zoom-card-title"></h2></div><p class="zoom-hint"><kbd>SPACE</kbd> / <kbd>ESC</kbd> để trở lại</p></div>
+  </dialog>
+  <div id="live-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <noscript><p class="noscript-message">Vui lòng bật JavaScript để sử dụng Bingo.</p></noscript>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/Draggable.min.js"></script>
+  <script src="js/vendor/Flip.min.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/sfx.js"></script>
+  <script src="js/mechanics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Thay tên và đường dẫn ảnh tại đây. Mỗi thẻ cần một id riêng biệt. */
+window.BINGO_ITEMS = [
+  { id: 1, name: 'BÁNH RĂNG VÀNG', image: 'assets/items/item-1.png' },
+  { id: 2, name: 'ĐỒNG HỒ CƠ', image: 'assets/items/item-2.png' },
+  { id: 3, name: 'TIA LỬA ĐIỆN', image: 'assets/items/item-3.png' },
+  { id: 4, name: 'NĂNG LƯỢNG FEV', image: 'assets/items/item-4.png' },
+  { id: 5, name: 'KẾT NỐI', image: 'assets/items/item-5.png' },
+  { id: 6, name: 'CHIA SẺ ONSITE', image: 'assets/items/item-6.png' },
+  { id: 7, name: 'CÔNG NGHỆ 4.0', image: 'assets/items/item-7.png' },
+  { id: 8, name: 'SÁNG TẠO ĐỘT PHÁ', image: 'assets/items/item-8.png' },
+  { id: 9, name: 'ĐOÀN KẾT VỮNG MẠNH', image: 'assets/items/item-9.png' },
+  { id: 10, name: 'VƯƠN TẦM CAO', image: 'assets/items/item-10.png' },
+  { id: 11, name: 'LẬP TRÌNH VIÊN', image: 'assets/items/item-11.png' },
+  { id: 12, name: 'THIẾT KẾ ĐỈNH CAO', image: 'assets/items/item-12.png' },
+  { id: 13, name: 'TRUYỀN CẢM HỨNG', image: 'assets/items/item-13.png' },
+  { id: 14, name: 'LÃNH ĐẠO TRẺ', image: 'assets/items/item-14.png' },
+  { id: 15, name: 'TƯ DUY ĐỔI MỚI', image: 'assets/items/item-15.png' },
+  { id: 16, name: 'HỘI NHẬP TOÀN CẦU', image: 'assets/items/item-16.png' },
+  { id: 17, name: 'VƯỢT THỬ THÁCH', image: 'assets/items/item-17.png' },
+  { id: 18, name: 'CHIẾN THẮNG BINGO', image: 'assets/items/item-18.png' },
+  { id: 19, name: 'NGÔI SAO MAY MẮN', image: 'assets/items/item-19.png' },
+  { id: 20, name: 'ĐỈNH VINH QUANG', image: 'assets/items/item-20.png' },
+  { id: 21, name: 'NGỌN LỬA ĐAM MÊ', image: 'assets/items/item-21.png' },
+  { id: 22, name: 'CỖ MÁY THỜI GIAN', image: 'assets/items/item-22.png' },
+  { id: 23, name: 'KHO BÁU BÍ MẬT', image: 'assets/items/item-23.png' },
+  { id: 24, name: 'KỶ NGUYÊN MỚI', image: 'assets/items/item-24.png' },
+  { id: 25, name: 'JACKPOT FEV', image: 'assets/items/item-25.png' }
+];
