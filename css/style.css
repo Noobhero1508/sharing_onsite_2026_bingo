@@ -40,3 +40,12 @@ dialog{color:var(--color-text);font-family:var(--font-body);background:var(--col
 .zoom-dialog::backdrop{animation:zoom-backdrop-in .26s ease-out both}
 @keyframes zoom-backdrop-in{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.zoom-image-frame{will-change:auto}.zoom-dialog::backdrop{animation:none}}
+
+/* Ô chưa bốc chỉ cho hậu cần thấy số, không tải ảnh gợi ý vào lịch sử. */
+.history-unrevealed{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(145deg,#20312f,#101c1e);color:#aab8aa;font:600 76px/1 var(--font-display);letter-spacing:.02em}
+.history-item.is-undrawn .history-image-wrap{border-color:#3a4a46}
+.history-item.is-undrawn .history-order{background:#182626;color:#d1d8cc}
+.history-item-id{display:block;margin-top:8px}
+.history-item.is-undrawn .history-item-id{color:#aab8aa}
+.reel-card .card-image{padding:30px}
+.card-number{position:absolute;left:24px;top:24px;min-width:70px;padding:8px 14px 6px;background:#f3cb76;color:#20322e;border:2px solid #fff4cd;border-radius:5px;box-shadow:0 4px 0 #7d632f;font:600 35px/1 var(--font-display);text-align:center}

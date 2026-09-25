@@ -25,20 +25,19 @@ Có thể nghe trước một lượt âm thanh tại `preview/16-am-thanh-luot-
 
 Khi một nút công cụ có focus, Space/Enter kích hoạt chính nút đó. Đóng lịch sử trước khi quay tiếp. Thẻ cũ chuyển sang khay bên trái khi bắt đầu lượt kế tiếp; lịch sử giữ đủ mọi kết quả theo thứ tự.
 
-## Thay 25 thẻ chính thức
+## Ảnh thẻ và đáp án
 
-Bộ ảnh hiện tại là **thẻ tạm của dự án cũ**.
+Thẻ 6–25 dùng hình từ bộ `D:\learn in FPTU\internet_icons`. Thẻ 1–5 hiện là ô số chờ bổ sung hình. Bản công khai chỉ hiện số thẻ, không ghi đáp án bằng chữ; ô lịch sử chưa bốc không hiện hình.
 
-- Thay các ảnh trong `assets/items/`, giữ tên `item-1.png` đến `item-25.png`.
-- Dùng ảnh vuông, khuyến nghị 1000 × 1000 px hoặc lớn hơn cho trình chiếu. Ảnh khác tỷ lệ sẽ được thu vừa khung, không bị cắt.
-- Mở `js/items.js` bằng trình soạn thảo văn bản và sửa `name` tương ứng. `id`, `name`, `image` của mỗi thẻ nằm cùng một dòng để dễ thay đổi. Giữ 25 mã số duy nhất từ 1 đến 25.
-- Tên trong giao diện lấy từ `name`. Chữ đã nằm sẵn trong ảnh cần được sửa trong chính ảnh.
+- Khi có hình cho thẻ 1–5, chép vào `assets/items/` với tên `item-1.png` đến `item-5.png`, rồi đổi `image: null` ở dòng tương ứng trong `js/items.js` thành đường dẫn ảnh.
+- Giữ 25 mã số duy nhất từ 1 đến 25. Tên `name` trong danh sách vẫn là nhãn trung tính “Thẻ 01”, “Thẻ 02”…; không đưa đáp án vào mã nguồn công khai, tên tệp hoặc nội dung thay thế của ảnh.
+- Dùng ảnh vuông và tránh chữ tiết lộ đáp án trong chính ảnh. Ảnh 256 × 256 px vẫn dùng được; ảnh lớn hơn sẽ sắc hơn trên màn hình LED hoặc khi phóng to.
 - Tải lại trang để nạp bộ ảnh mới. Nếu thiếu ảnh, trang báo rõ và dùng số cùng tên thẻ thay thế.
 
 Ví dụ một mục:
 
 ```js
-{ id: 1, name: 'TÊN THẺ CHÍNH THỨC', image: 'assets/items/item-1.png' }
+{ id: 1, name: 'Thẻ 01', image: 'assets/items/item-1.png' }
 ```
 
 ## Trong buổi sự kiện
@@ -72,4 +71,4 @@ Trang truy cập: https://noobhero1508.github.io/sharing_onsite_2026_bingo/
 
 Mã nguồn và tài nguyên: https://github.com/Noobhero1508/sharing_onsite_2026_bingo
 
-Khi thay 25 thẻ, cập nhật ảnh trong `assets/items/` và tên tương ứng ở `js/items.js`, sau đó commit và push vào nhánh `main`. GitHub Pages sẽ xuất bản phiên bản mới sau khi triển khai xong. Bản chạy tại chỗ vẫn mở được bằng `index.html` và không cần mạng.
+Khi thêm hoặc thay ảnh, cập nhật `assets/items/` và đường dẫn trong `js/items.js`, sau đó commit và push vào nhánh `main`. GitHub Pages sẽ xuất bản phiên bản mới sau khi triển khai xong. Bản chạy tại chỗ vẫn mở được bằng `index.html` và không cần mạng.

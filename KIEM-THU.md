@@ -16,7 +16,7 @@ Ngày kiểm tra: 23/09/2026. Trình duyệt: Chrome 153 trên Windows, chạy t
 | Điều khiển bằng bàn phím | Enter/Space trên ô kết quả mở phóng to, không bắt đầu lượt mới |
 | Toàn màn hình và âm thanh | Vào/thoát bằng nút; âm thanh được khởi tạo và dừng sau lượt, tắt/bật hoạt động |
 | Giảm chuyển động | Chuyển cảnh ngắn, kết quả và lịch sử vẫn chính xác |
-| Thiếu toàn bộ ảnh thẻ | Có thông báo, dùng tên và mã thẻ thay thế; quay và phóng to vẫn hoạt động |
+| Thiếu ảnh thẻ đã khai báo | Có thông báo, dùng mã thẻ thay thế; quay và phóng to vẫn hoạt động |
 | Tài nguyên chuyển động sau 25 lượt | Không tăng số animation tồn đọng: 1 → 1 |
 | Tải lại trang | Bắt đầu phiên mới, bộ đếm trở về 25 |
 
@@ -53,4 +53,4 @@ Phóng to có chuyển động bật từ thẻ được chọn, trả focus sau
 
 Ba bánh răng vàng hiển thị rõ: hai trong nền và một bên thân máy. Ảnh đối chiếu: `preview/17-gold-gears-idle-1920.png`, `18-gold-gears-spinning-1920.png`. Bản nghe thử theo bộ mẫu đã được ghi lại tại `preview/16-am-thanh-luot-quay.mp3`.
 
-Âm thanh được xác nhận ở mức Web Audio; chưa nghe kiểm tra trên loa sự kiện hoặc kiểm tra trực tiếp với máy chiếu/LED của hội trường. Chưa kiểm chứng tích hợp Canva. Bộ 25 ảnh hiện tại vẫn là thẻ tạm.
+Âm thanh được xác nhận ở mức Web Audio; chưa nghe kiểm tra trên loa sự kiện hoặc kiểm tra trực tiếp với máy chiếu/LED của hội trường. Chưa kiểm chứng tích hợp Canva. Hình 6–25 đã lấy từ bộ `internet_icons`; hình 1–5 vẫn cần bổ sung. Lịch sử chưa bốc và các nhãn giao diện chỉ hiện số.

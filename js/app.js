@@ -76,6 +76,7 @@
 
     async preload() {
       await Promise.all(this.allItems.map((item) => new Promise((resolve) => {
+        if (!item.image) { resolve(); return; }
         const image = new Image();
         const timeout = setTimeout(() => { this.missingImages.add(item.id); resolve(); }, 10000);
         image.onload = () => { clearTimeout(timeout); resolve(); };
@@ -107,23 +108,30 @@
       fallback.className = 'card-fallback';
       const number = document.createElement('span');
       number.textContent = pad(item.id);
-      const label = document.createElement('strong');
-      label.textContent = item.name;
-      fallback.append(number, label);
-      fallback.hidden = !this.missingImages.has(item.id);
+      fallback.append(number);
+      fallback.hidden = Boolean(item.image) && !this.missingImages.has(item.id);
       wrap.append(fallback);
-      if (!this.missingImages.has(item.id)) {
+      if (item.image && !this.missingImages.has(item.id)) {
+        let numberBadge = null;
+        if (className === 'card-image') {
+          numberBadge = document.createElement('span');
+          numberBadge.className = 'card-number';
+          numberBadge.textContent = pad(item.id);
+          numberBadge.setAttribute('aria-hidden', 'true');
+        }
         const image = new Image();
         image.className = className;
-        image.alt = item.name;
+        image.alt = `Hình thẻ ${pad(item.id)}`;
         image.draggable = false;
         image.addEventListener('error', () => {
           this.missingImages.add(item.id);
           image.remove();
+          if (numberBadge) numberBadge.remove();
           fallback.hidden = false;
         }, { once: true });
         image.src = item.image;
         wrap.prepend(image);
+        if (numberBadge) wrap.append(numberBadge);
       }
       return wrap;
     }
@@ -361,7 +369,7 @@
       this.reelPosition.value = 0;
       gsap.set(this.strip, { y: 0, opacity: 1 });
       this.strip.removeAttribute('aria-hidden');
-      $('current-name').textContent = winner.name;
+      $('current-name').textContent = '';
       $('current-number').textContent = `THẺ ${pad(winner.id)}`;
       if (!this.reducedMotion) {
         gsap.killTweensOf($('result-meta'));
@@ -370,10 +378,10 @@
           onComplete: () => gsap.set($('result-meta'), { clearProps: 'transform,opacity' })
         });
       }
-      this.reelWindow.setAttribute('aria-label', `Thẻ ${pad(winner.id)}: ${winner.name}. Phóng to kết quả.`);
+      this.reelWindow.setAttribute('aria-label', `Thẻ ${pad(winner.id)}. Phóng to hình.`);
       this.updateControls();
       this.renderHistoryGrid();
-      this.announce(`Lượt ${this.drawnItems.length}: ${winner.name}. ${this.remainingItems.length ? `Còn ${this.remainingItems.length} thẻ.` : 'Đã bốc đủ tất cả các thẻ.'}`);
+      this.announce(`Lượt ${this.drawnItems.length}: thẻ ${pad(winner.id)}. ${this.remainingItems.length ? `Còn ${this.remainingItems.length} thẻ.` : 'Đã bốc đủ tất cả các thẻ.'}`);
       window.sfx.playWin();
       if (this.reducedMotion) gsap.fromTo(this.strip, { opacity: 0 }, { opacity: 1, duration: 0.12 });
       this.resetLever();
@@ -391,7 +399,7 @@
       card.append(this.makeImage(previous, 'dock-image'));
       const label = document.createElement('span');
       label.className = 'dock-label';
-      label.textContent = `${pad(previous.id)} / ${previous.name}`;
+      label.textContent = `THẺ ${pad(previous.id)}`;
       const old = dock.querySelector('.dock-card');
       if (old) {
         if (this.reducedMotion) old.remove();
@@ -446,10 +454,21 @@
         const drawn = order !== -1;
         const card = document.createElement(drawn ? 'button' : 'div');
         card.className = `history-item ${drawn ? 'is-drawn' : 'is-undrawn'}`;
-        if (drawn) { card.type = 'button'; card.addEventListener('click', () => this.openZoomModal(item, imageWrap)); }
+        if (drawn) {
+          card.type = 'button';
+          card.setAttribute('aria-label', `Lượt ${pad(order + 1)}, thẻ ${pad(item.id)}. Phóng to hình.`);
+          card.addEventListener('click', () => this.openZoomModal(item, imageWrap));
+        }
         const imageWrap = document.createElement('div');
         imageWrap.className = 'history-image-wrap';
-        imageWrap.append(this.makeImage(item, 'history-image'));
+        if (drawn) imageWrap.append(this.makeImage(item, 'history-image'));
+        else {
+          const hiddenCard = document.createElement('span');
+          hiddenCard.className = 'history-unrevealed';
+          hiddenCard.textContent = pad(item.id);
+          hiddenCard.setAttribute('aria-hidden', 'true');
+          imageWrap.append(hiddenCard);
+        }
         const badge = document.createElement('span');
         badge.className = 'history-order';
         badge.textContent = drawn ? `LƯỢT ${pad(order + 1)}` : 'CHƯA BỐC';
@@ -457,10 +476,7 @@
         const id = document.createElement('span');
         id.className = 'history-item-id';
         id.textContent = pad(item.id);
-        const name = document.createElement('span');
-        name.className = 'history-item-name';
-        name.textContent = item.name;
-        card.append(imageWrap, id, name);
+        card.append(imageWrap, id);
         grid.append(card);
       });
     }
@@ -481,19 +497,19 @@
       const sourceRect = source.getBoundingClientRect();
       this.zoomRestoreFocus = document.activeElement;
       const image = $('zoom-card-img');
-      $('zoom-card-title').textContent = item.name;
-      $('zoom-card-badge').textContent = `THẺ ${pad(item.id)} · LƯỢT ${pad(this.drawnItems.findIndex((drawn) => drawn.id === item.id) + 1)}`;
+      $('zoom-card-title').textContent = `THẺ ${pad(item.id)}`;
+      $('zoom-card-badge').textContent = `LƯỢT ${pad(this.drawnItems.findIndex((drawn) => drawn.id === item.id) + 1)}`;
       let fallback = this.zoomDialog.querySelector('.zoom-image-fallback');
       if (!fallback) {
         fallback = document.createElement('div');
         fallback.className = 'card-fallback zoom-image-fallback';
         image.after(fallback);
       }
-      fallback.textContent = `${pad(item.id)} / ${item.name}`;
+      fallback.textContent = pad(item.id);
       const showFallback = () => { image.hidden = true; fallback.hidden = false; };
       image.onerror = showFallback;
-      image.alt = item.name;
-      image.hidden = this.missingImages.has(item.id);
+      image.alt = `Hình thẻ ${pad(item.id)}`;
+      image.hidden = !item.image || this.missingImages.has(item.id);
       fallback.hidden = !image.hidden;
       if (!image.hidden) image.src = item.image;
       else image.removeAttribute('src');
