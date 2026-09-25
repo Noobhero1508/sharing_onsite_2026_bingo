@@ -1,6 +1,6 @@
 # Bingo · Sharing Onsite 2026
 
-Trò chơi Bingo trình chiếu cho sự kiện Sharing Onsite 2026. Trang web tĩnh, gồm 20 hình từ bộ `internet_icons` ở thẻ 6–25 và 5 thẻ số chờ bổ sung ảnh. Trang hoạt động cả khi mở `index.html` trực tiếp và không cần kết nối mạng để chạy.
+Trò chơi Bingo trình chiếu cho sự kiện Sharing Onsite 2026. Trang web tĩnh, dùng ảnh do người dùng cung cấp cho thẻ 03 và 06–25; thẻ 01, 02, 04, 05 vẫn hiện ô số vì ảnh trong thư mục nguồn là thẻ cũ có ghi đáp án. Trang hoạt động cả khi mở `index.html` trực tiếp và không cần kết nối mạng để chạy.
 
 **Chơi trực tuyến:** https://noobhero1508.github.io/sharing_onsite_2026_bingo/
 

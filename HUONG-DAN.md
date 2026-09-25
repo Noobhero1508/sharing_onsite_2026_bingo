@@ -27,12 +27,13 @@ Khi một nút công cụ có focus, Space/Enter kích hoạt chính nút đó. 
 
 ## Ảnh thẻ và đáp án
 
-Thẻ 6–25 dùng hình từ bộ `D:\learn in FPTU\internet_icons`. Thẻ 1–5 hiện là ô số chờ bổ sung hình. Bản công khai chỉ hiện số thẻ, không ghi đáp án bằng chữ; ô lịch sử chưa bốc không hiện hình.
+Ảnh nguồn hiện lấy từ `C:\Users\LEGION\OneDrive\Desktop\bingo-sharing-onsite\assets\items`. Thẻ 03 và 06–25 đã hiện ảnh mới. Thẻ 01, 02, 04, 05 vẫn là ô số: bốn tệp tương ứng trong thư mục nguồn còn là thẻ cũ có ghi đáp án. Bản công khai chỉ hiện số thẻ, không ghi đáp án bằng chữ; ô lịch sử chưa bốc không hiện hình.
 
-- Khi có hình cho thẻ 1–5, chép vào `assets/items/` với tên `item-1.png` đến `item-5.png`, rồi đổi `image: null` ở dòng tương ứng trong `js/items.js` thành đường dẫn ảnh.
+- Khi có hình cho thẻ 01, 02, 04, 05, chép vào `assets/items/` với tên trung tính như `item-1.png`, rồi đổi `image: null` ở dòng tương ứng trong `js/items.js` thành đường dẫn ảnh.
+- Một số tệp trong thư mục nguồn có đuôi `.png` nhưng dữ liệu thực là JPEG hoặc WebP. Bản đóng gói đã đặt lại đúng đuôi cho thẻ 03, 09, 15, 23; khi thay ảnh về sau, hãy dùng đúng đuôi theo định dạng thật của tệp.
 - Giữ 25 mã số duy nhất từ 1 đến 25. Tên `name` trong danh sách vẫn là nhãn trung tính “Thẻ 01”, “Thẻ 02”…; không đưa đáp án vào mã nguồn công khai, tên tệp hoặc nội dung thay thế của ảnh.
 - Dùng ảnh vuông và tránh chữ tiết lộ đáp án trong chính ảnh. Ảnh 256 × 256 px vẫn dùng được; ảnh lớn hơn sẽ sắc hơn trên màn hình LED hoặc khi phóng to.
-- Tải lại trang để nạp bộ ảnh mới. Nếu thiếu ảnh, trang báo rõ và dùng số cùng tên thẻ thay thế.
+- Tải lại trang để nạp bộ ảnh mới. Khi cập nhật bản công khai, tăng số phiên bản sau `?v=` ở cuối `js/items.js` và trong `index.html` để trình duyệt lấy ảnh mới ngay. Nếu thiếu ảnh, trang báo rõ và dùng số thẻ thay thế.
 
 Ví dụ một mục:
 
@@ -71,4 +72,4 @@ Trang truy cập: https://noobhero1508.github.io/sharing_onsite_2026_bingo/
 
 Mã nguồn và tài nguyên: https://github.com/Noobhero1508/sharing_onsite_2026_bingo
 
-Khi thêm hoặc thay ảnh, cập nhật `assets/items/` và đường dẫn trong `js/items.js`, sau đó commit và push vào nhánh `main`. GitHub Pages sẽ xuất bản phiên bản mới sau khi triển khai xong. Bản chạy tại chỗ vẫn mở được bằng `index.html` và không cần mạng.
+Khi thêm hoặc thay ảnh, cập nhật `assets/items/`, đường dẫn trong `js/items.js` và số phiên bản tải ảnh, sau đó commit và push vào nhánh `main`. GitHub Pages sẽ xuất bản phiên bản mới sau khi triển khai xong. Bản chạy tại chỗ vẫn mở được bằng `index.html` và không cần mạng.

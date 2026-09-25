@@ -53,4 +53,4 @@ Phóng to có chuyển động bật từ thẻ được chọn, trả focus sau
 
 Ba bánh răng vàng hiển thị rõ: hai trong nền và một bên thân máy. Ảnh đối chiếu: `preview/17-gold-gears-idle-1920.png`, `18-gold-gears-spinning-1920.png`. Bản nghe thử theo bộ mẫu đã được ghi lại tại `preview/16-am-thanh-luot-quay.mp3`.
 
-Âm thanh được xác nhận ở mức Web Audio; chưa nghe kiểm tra trên loa sự kiện hoặc kiểm tra trực tiếp với máy chiếu/LED của hội trường. Chưa kiểm chứng tích hợp Canva. Hình 6–25 đã lấy từ bộ `internet_icons`; hình 1–5 vẫn cần bổ sung. Lịch sử chưa bốc và các nhãn giao diện chỉ hiện số.
+Âm thanh được xác nhận ở mức Web Audio; chưa nghe kiểm tra trên loa sự kiện hoặc kiểm tra trực tiếp với máy chiếu/LED của hội trường. Chưa kiểm chứng tích hợp Canva. Ảnh đang dùng lấy từ thư mục Bingo trên OneDrive: thẻ 03 và 06–25 hiển thị hình; thẻ 01, 02, 04, 05 chờ ảnh thay thế không có chữ đáp án. Lịch sử chưa bốc và các nhãn giao diện chỉ hiện số.

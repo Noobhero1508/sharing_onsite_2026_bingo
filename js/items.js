@@ -1,20 +1,20 @@
-/* Chỉ dùng số thẻ trong giao diện công khai. Ảnh 1–5 sẽ bổ sung sau. */
+/* Chỉ dùng số thẻ trong giao diện công khai. 1, 2, 4, 5 chờ ảnh không chứa đáp án. */
 window.BINGO_ITEMS = [
   { id: 1, name: 'Thẻ 01', image: null },
   { id: 2, name: 'Thẻ 02', image: null },
-  { id: 3, name: 'Thẻ 03', image: null },
+  { id: 3, name: 'Thẻ 03', image: 'assets/items/item-3.jpg' },
   { id: 4, name: 'Thẻ 04', image: null },
   { id: 5, name: 'Thẻ 05', image: null },
   { id: 6, name: 'Thẻ 06', image: 'assets/items/item-6.png' },
   { id: 7, name: 'Thẻ 07', image: 'assets/items/item-7.png' },
   { id: 8, name: 'Thẻ 08', image: 'assets/items/item-8.png' },
-  { id: 9, name: 'Thẻ 09', image: 'assets/items/item-9.png' },
+  { id: 9, name: 'Thẻ 09', image: 'assets/items/item-9.webp' },
   { id: 10, name: 'Thẻ 10', image: 'assets/items/item-10.png' },
   { id: 11, name: 'Thẻ 11', image: 'assets/items/item-11.png' },
   { id: 12, name: 'Thẻ 12', image: 'assets/items/item-12.png' },
   { id: 13, name: 'Thẻ 13', image: 'assets/items/item-13.png' },
   { id: 14, name: 'Thẻ 14', image: 'assets/items/item-14.png' },
-  { id: 15, name: 'Thẻ 15', image: 'assets/items/item-15.png' },
+  { id: 15, name: 'Thẻ 15', image: 'assets/items/item-15.jpg' },
   { id: 16, name: 'Thẻ 16', image: 'assets/items/item-16.png' },
   { id: 17, name: 'Thẻ 17', image: 'assets/items/item-17.png' },
   { id: 18, name: 'Thẻ 18', image: 'assets/items/item-18.png' },
@@ -22,7 +22,7 @@ window.BINGO_ITEMS = [
   { id: 20, name: 'Thẻ 20', image: 'assets/items/item-20.png' },
   { id: 21, name: 'Thẻ 21', image: 'assets/items/item-21.png' },
   { id: 22, name: 'Thẻ 22', image: 'assets/items/item-22.png' },
-  { id: 23, name: 'Thẻ 23', image: 'assets/items/item-23.png' },
+  { id: 23, name: 'Thẻ 23', image: 'assets/items/item-23.jpg' },
   { id: 24, name: 'Thẻ 24', image: 'assets/items/item-24.png' },
   { id: 25, name: 'Thẻ 25', image: 'assets/items/item-25.png' }
-];
+].map((item) => item.image ? { ...item, image: `${item.image}?v=20260926` } : item);
