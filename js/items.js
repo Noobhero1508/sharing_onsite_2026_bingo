@@ -6,7 +6,7 @@ window.BINGO_ITEMS = [
   { id: 4, name: 'Thẻ 04', image: 'assets/items/item-4.jpg' },
   { id: 5, name: 'Thẻ 05', image: 'assets/items/item-5.jpg' },
   { id: 6, name: 'Thẻ 06', image: 'assets/items/item-6.png' },
-  { id: 7, name: 'Thẻ 07', image: 'assets/items/item-7.png' },
+  { id: 7, name: 'Thẻ 07', image: 'assets/items/item-7.jpg' },
   { id: 8, name: 'Thẻ 08', image: 'assets/items/item-8.png' },
   { id: 9, name: 'Thẻ 09', image: 'assets/items/item-9.webp' },
   { id: 10, name: 'Thẻ 10', image: 'assets/items/item-10.png' },
@@ -25,4 +25,4 @@ window.BINGO_ITEMS = [
   { id: 23, name: 'Thẻ 23', image: 'assets/items/item-23.jpg' },
   { id: 24, name: 'Thẻ 24', image: 'assets/items/item-24.png' },
   { id: 25, name: 'Thẻ 25', image: 'assets/items/item-25.png' }
-].map((item) => ({ ...item, image: `${item.image}?v=20260927` }));
+].map((item) => ({ ...item, image: `${item.image}?v=20260928` }));
