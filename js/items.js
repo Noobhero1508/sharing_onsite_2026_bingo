@@ -25,4 +25,4 @@ window.BINGO_ITEMS = [
   { id: 23, name: 'Thẻ 23', image: 'assets/items/item-23.jpg' },
   { id: 24, name: 'Thẻ 24', image: 'assets/items/item-24.png' },
   { id: 25, name: 'Thẻ 25', image: 'assets/items/item-25.png' }
-].map((item) => ({ ...item, image: `${item.image}?v=20260928` }));
+].map((item) => ({ ...item, image: `${item.image}?v=20260928-2` }));
