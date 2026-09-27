@@ -1,10 +1,10 @@
-/* Chỉ dùng số thẻ trong giao diện công khai. 1, 2, 4, 5 chờ ảnh không chứa đáp án. */
+/* Chỉ dùng số thẻ trong giao diện công khai. Đường dẫn ảnh khớp định dạng thật của từng tệp. */
 window.BINGO_ITEMS = [
-  { id: 1, name: 'Thẻ 01', image: null },
-  { id: 2, name: 'Thẻ 02', image: null },
+  { id: 1, name: 'Thẻ 01', image: 'assets/items/item-1.jpg' },
+  { id: 2, name: 'Thẻ 02', image: 'assets/items/item-2.jpg' },
   { id: 3, name: 'Thẻ 03', image: 'assets/items/item-3.jpg' },
-  { id: 4, name: 'Thẻ 04', image: null },
-  { id: 5, name: 'Thẻ 05', image: null },
+  { id: 4, name: 'Thẻ 04', image: 'assets/items/item-4.jpg' },
+  { id: 5, name: 'Thẻ 05', image: 'assets/items/item-5.jpg' },
   { id: 6, name: 'Thẻ 06', image: 'assets/items/item-6.png' },
   { id: 7, name: 'Thẻ 07', image: 'assets/items/item-7.png' },
   { id: 8, name: 'Thẻ 08', image: 'assets/items/item-8.png' },
@@ -25,4 +25,4 @@ window.BINGO_ITEMS = [
   { id: 23, name: 'Thẻ 23', image: 'assets/items/item-23.jpg' },
   { id: 24, name: 'Thẻ 24', image: 'assets/items/item-24.png' },
   { id: 25, name: 'Thẻ 25', image: 'assets/items/item-25.png' }
-].map((item) => item.image ? { ...item, image: `${item.image}?v=20260926` } : item);
+].map((item) => ({ ...item, image: `${item.image}?v=20260927` }));

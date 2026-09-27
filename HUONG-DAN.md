@@ -27,9 +27,9 @@ Khi một nút công cụ có focus, Space/Enter kích hoạt chính nút đó. 
 
 ## Ảnh thẻ và đáp án
 
-Ảnh nguồn hiện lấy từ `C:\Users\LEGION\OneDrive\Desktop\bingo-sharing-onsite\assets\items`. Thẻ 03 và 06–25 đã hiện ảnh mới. Thẻ 01, 02, 04, 05 vẫn là ô số: bốn tệp tương ứng trong thư mục nguồn còn là thẻ cũ có ghi đáp án. Bản công khai chỉ hiện số thẻ, không ghi đáp án bằng chữ; ô lịch sử chưa bốc không hiện hình.
+Trang dùng đủ 25 ảnh trong `assets/items/`. Bản công khai chỉ hiện số thẻ ngoài ảnh, không ghi đáp án bằng chữ; ô lịch sử chưa bốc không hiện hình.
 
-- Khi có hình cho thẻ 01, 02, 04, 05, chép vào `assets/items/` với tên trung tính như `item-1.png`, rồi đổi `image: null` ở dòng tương ứng trong `js/items.js` thành đường dẫn ảnh.
+- Khi thay ảnh, dùng tên trung tính như `item-1.jpg` và cập nhật đường dẫn của đúng số thẻ trong `js/items.js`.
 - Một số tệp trong thư mục nguồn có đuôi `.png` nhưng dữ liệu thực là JPEG hoặc WebP. Bản đóng gói đã đặt lại đúng đuôi cho thẻ 03, 09, 15, 23; khi thay ảnh về sau, hãy dùng đúng đuôi theo định dạng thật của tệp.
 - Giữ 25 mã số duy nhất từ 1 đến 25. Tên `name` trong danh sách vẫn là nhãn trung tính “Thẻ 01”, “Thẻ 02”…; không đưa đáp án vào mã nguồn công khai, tên tệp hoặc nội dung thay thế của ảnh.
 - Dùng ảnh vuông và tránh chữ tiết lộ đáp án trong chính ảnh. Ảnh 256 × 256 px vẫn dùng được; ảnh lớn hơn sẽ sắc hơn trên màn hình LED hoặc khi phóng to.
@@ -38,7 +38,7 @@ Khi một nút công cụ có focus, Space/Enter kích hoạt chính nút đó. 
 Ví dụ một mục:
 
 ```js
-{ id: 1, name: 'Thẻ 01', image: 'assets/items/item-1.png' }
+{ id: 1, name: 'Thẻ 01', image: 'assets/items/item-1.jpg' }
 ```
 
 ## Trong buổi sự kiện
