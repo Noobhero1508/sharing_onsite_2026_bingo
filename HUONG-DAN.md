@@ -29,8 +29,8 @@ Khi một nút công cụ có focus, Space/Enter kích hoạt chính nút đó. 
 
 Trang dùng đủ 25 ảnh trong `assets/items/`. Bản công khai chỉ hiện số thẻ ngoài ảnh, không ghi đáp án bằng chữ; ô lịch sử chưa bốc không hiện hình.
 
-- Khi thay ảnh, dùng tên trung tính như `item-1.jpg` và cập nhật đường dẫn của đúng số thẻ trong `js/items.js`.
-- Một số tệp trong thư mục nguồn có đuôi `.png` nhưng dữ liệu thực là JPEG hoặc WebP. Bản đóng gói đã đặt lại đúng đuôi cho thẻ 03, 09, 15, 23; khi thay ảnh về sau, hãy dùng đúng đuôi theo định dạng thật của tệp.
+- Khi thay ảnh, hãy xuất đúng định dạng PNG, đặt tên `item-1.png` đến `item-25.png` theo số thẻ rồi chép vào `assets/items/`. Giữ nguyên đường dẫn tương ứng trong `js/items.js`.
+- Không chỉ đổi đuôi JPEG hoặc WebP thành `.png`: cần mở ảnh và xuất lại thành PNG thật để trình duyệt và bản chạy offline dùng ổn định.
 - Giữ 25 mã số duy nhất từ 1 đến 25. Tên `name` trong danh sách vẫn là nhãn trung tính “Thẻ 01”, “Thẻ 02”…; không đưa đáp án vào mã nguồn công khai, tên tệp hoặc nội dung thay thế của ảnh.
 - Dùng ảnh vuông và tránh chữ tiết lộ đáp án trong chính ảnh. Ảnh 256 × 256 px vẫn dùng được; ảnh lớn hơn sẽ sắc hơn trên màn hình LED hoặc khi phóng to.
 - Tải lại trang để nạp bộ ảnh mới. Khi cập nhật bản công khai, tăng số phiên bản sau `?v=` ở cuối `js/items.js` và trong `index.html` để trình duyệt lấy ảnh mới ngay. Nếu thiếu ảnh, trang báo rõ và dùng số thẻ thay thế.
@@ -38,7 +38,7 @@ Trang dùng đủ 25 ảnh trong `assets/items/`. Bản công khai chỉ hiện 
 Ví dụ một mục:
 
 ```js
-{ id: 1, name: 'Thẻ 01', image: 'assets/items/item-1.jpg' }
+{ id: 1, name: 'Thẻ 01', image: 'assets/items/item-1.png' }
 ```
 
 ## Trong buổi sự kiện
